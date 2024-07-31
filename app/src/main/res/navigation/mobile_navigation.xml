@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.attendencebro.ui.takeAttendace.takeAttendanceFragment"
+        android:label="Take attendence"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_member"
+            app:destination="@id/nav_member" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_login2"
+            app:destination="@id/nav_login2" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.attendencebro.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_member"
+        android:name="com.example.attendencebro.ui.takeAttendace.Member_Master"
+        android:label="MemberMaster"
+        tools:layout="@layout/fragment_member__master"/>
+
+    <fragment
+        android:id="@+id/nav_login2"
+        android:name="com.example.attendencebro.ui.login2.Login"
+        android:label="Login"
+        tools:layout="@layout/fragment_login2">
+        <action
+            android:id="@+id/action_nav_login2_to_nav_dashBoard"
+            app:destination="@id/nav_dashBoard" />
+        <action
+            android:id="@+id/action_nav_login2_to_nav_forgot_pass"
+            app:destination="@id/nav_forgot_pass" />
+        <action
+            android:id="@+id/action_nav_login2_to_nav_signup"
+            app:destination="@id/nav_signup" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="com.example.attendencebro.ui.signup.signup"
+        android:label="signup"
+        tools:layout="@layout/fragment_signup"/>
+    <fragment
+        android:id="@+id/nav_dashBoard"
+        android:name="com.example.attendencebro.dashBoard.dashboard"
+        android:label="Home"
+        tools:layout="@layout/fragment_dashboard"/>
+    <fragment
+        android:id="@+id/nav_forgot_pass"
+        android:name="com.example.attendencebro.ui.login2.Forgot_pass"
+        android:label="Forgot Password"
+        tools:layout="@layout/fragment_forgot_pass">
+        <action
+            android:id="@+id/action_nav_forgot_pass_to_nav_resetpass"
+            app:destination="@id/nav_resetpass" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_resetpass"
+        android:name="com.example.attendencebro.ui.login2.reset_passFragment"
+        android:label="Reset Password"
+        tools:layout="@layout/fragment_reset_pass"/>
+</navigation>
