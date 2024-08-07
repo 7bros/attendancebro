@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashscreenActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/splashscreenImg"
+        android:layout_width="330dp"
+        android:layout_height="420dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/attendancelogo" />
+
+    <TextView
+        android:id="@+id/splashscreenTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashscreenImg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Attendance Bro"
+        android:textColor="@color/Dark_Lavender"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivRLogo"
+        android:layout_width="390dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/maharajasplashscreen" />
+
+    <TextView
+        android:id="@+id/versionTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashscreenTxt"
+        android:gravity="center"
+        android:text="Version 0.1"
+        android:textColor="#3b3b3b"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/splashscreenLowerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Developed By"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/ivRLogo"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

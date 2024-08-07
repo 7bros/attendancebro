@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@drawable/attendancelogo</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+
+
+    </style>
+
+    </resources>
